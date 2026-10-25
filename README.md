@@ -2,18 +2,18 @@
 
 API REST para gestionar gastos compartidos en grupo (tipo Splitwise) y llevar las cuentas personales de cada usuario.
 
-> ?? En desarrollo. Versión 1.0 prevista para enero de 2027.
+> 馃毀 En desarrollo. Versi贸n 1.0 prevista para enero de 2027.
 
-## Qué hace
+## Qu茅 hace
 - Grupos, miembros y gastos compartidos (reparto a partes iguales, por porcentajes o por importes)
 - Balance de cada miembro y deudas simplificadas
 - Liquidaciones entre miembros
-- Autenticación con JWT y reglas de acceso por grupo
-- Ingresos y gastos personales con categorías y resumen mensual
+- Autenticaci贸n con JWT y reglas de acceso por grupo
+- Ingresos y gastos personales con categor铆as y resumen mensual
 
-## Tecnologías
-Java 21 · Spring Boot · Spring Data JPA · PostgreSQL 16 · Flyway · Spring Security (JWT) ·
-JUnit 5 · Mockito · Testcontainers · Docker Compose · GitHub Actions
+## Tecnolog铆as
+Java 21 路 Spring Boot 路 Spring Data JPA 路 PostgreSQL 16 路 Flyway 路 Spring Security (JWT) 路
+JUnit 5 路 Mockito 路 Testcontainers 路 Docker Compose 路 GitHub Actions
 
 ## Hoja de ruta
 | Fase | Alcance | Etiqueta |
@@ -23,7 +23,7 @@ JUnit 5 · Mockito · Testcontainers · Docker Compose · GitHub Actions
 | 3 | Seguridad con JWT y acceso por grupo | v0.3 |
 | 4 | Liquidaciones y repartos por porcentajes e importes | v0.4 |
 | 5 | Cuentas personales y resumen mensual | v0.5 |
-| 6 | Tests de integración, Docker, CI y documentación | v1.0 |
+| 6 | Tests de integraci贸n, Docker, CI y documentaci贸n | v1.0 |
 
-## Ejecución en local
-_Próximamente: `docker compose up`._
+## Ejecuci贸n en local
+_Pr贸ximamente: `docker compose up`._
