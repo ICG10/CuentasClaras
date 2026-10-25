@@ -19,11 +19,11 @@ out/
 *.log
 logs/
 
-# Secrets / local config
+# Secretos y configuración local
 .env
 *.env
 application-local.yml
 
-# OS
+# Sistema operativo
 .DS_Store
 Thumbs.db
