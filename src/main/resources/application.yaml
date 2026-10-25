@@ -1,3 +1,15 @@
 spring:
   application:
     name: cuentasclaras
+  datasource:
+    url: jdbc:postgresql://localhost:5433/cuentasclaras
+    username: cuentasclaras
+    password: cuentasclaras
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC

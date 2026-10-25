@@ -1,0 +1,20 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: cuentasclaras-db
+    environment:
+      POSTGRES_DB: cuentasclaras
+      POSTGRES_USER: cuentasclaras
+      POSTGRES_PASSWORD: cuentasclaras
+    ports:
+        - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U cuentasclaras -d cuentasclaras"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  pgdata:
