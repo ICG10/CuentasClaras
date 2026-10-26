@@ -2,6 +2,7 @@ package com.cuentasclaras.user.service;
 
 import com.cuentasclaras.user.domain.EmailAlreadyInUseException;
 import com.cuentasclaras.user.domain.User;
+import com.cuentasclaras.user.domain.UserNotFoundException;
 import com.cuentasclaras.user.dto.CreateUserRequest;
 import com.cuentasclaras.user.dto.UserResponse;
 import com.cuentasclaras.user.repository.UserRepository;
@@ -24,5 +25,12 @@ public class UserService {
             throw new EmailAlreadyInUseException(user.getEmail());
         }
         return UserResponse.from(userRepository.save(user));
+    }
+
+    @Transactional(readOnly = true)
+    public void ensureExists(Long userId) {
+        if (!userRepository.existsById(userId)) {
+            throw new UserNotFoundException(userId);
+        }
     }
 }
