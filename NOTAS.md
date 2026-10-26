@@ -1,2 +1,3 @@
 # NOTAS
 - 2026-10-25: repo creado.Proyecto generado con Initializr (Boot 4.1.x, Java 21). PostgreSQL 16 en Docker (puerto 5433, el 5432 lo ocupa un PostgreSQL local) y app arrancando. Siguiente (S1 D1): migración Flyway V1 con users, expense_groups y group_members.
+- 2026-10-26 (S1 D1): migración V1 con users, expense_groups y group_members aplicada por Flyway. Siguiente: entidad User, repositorio y POST /users.
